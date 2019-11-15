@@ -2,12 +2,35 @@ type Query {
    greeting:String
    students:[Student]
    studentById(id:ID!):Student 
+   sayHello(name:String!):String
+   setFavouriteColor(color:ColorType):String
+}
+
+type College {
+   id:ID!
+   name:String
+   location:String
+   rating:Float
 }
 
 type Student {
    id:ID!
    firstName:String
    lastName:String
+   fullName:String 
    password:String
    collegeId:String
+   college:College
+}
+
+enum ColorType {
+   RED
+   BLUE
+   GREEN
+}
+
+
+type Mutation {
+   addStudent_returns_object(collegeId:ID,firstName:String,lastName:String):Student
+   createStudent(collegeId:ID,firstName:String,lastName:String):String
 }
