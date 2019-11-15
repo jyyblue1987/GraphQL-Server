@@ -1,4 +1,9 @@
+const db = require('./db')
 const Query = {
-    test: () => 'Test Success, GraphQL server is up & running111 !!'
- }
- module.exports = {Query}
+   greeting:() => {
+      return "hello from  TutorialsPoint !!!"
+   },
+   students:() => db.students.list()
+}
+
+module.exports = {Query}
