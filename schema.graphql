@@ -4,6 +4,7 @@ type Query {
    studentById(id:ID!):Student 
    sayHello(name:String!):String
    setFavouriteColor(color:ColorType):String
+   me:Student
 }
 
 type College {
@@ -34,6 +35,7 @@ type Mutation {
    addStudent_returns_object(collegeId:ID,firstName:String,lastName:String):Student
    createStudent(collegeId:ID,firstName:String,lastName:String):String
    signUp(input:SignUpInput):String
+   login (email: String!, password: String!): String
 }
 
 input SignUpInput {
@@ -41,3 +43,12 @@ input SignUpInput {
    password:String!,
    firstName:String!
 }
+
+
+type User {
+   id: Int!
+   username: String!
+   email: String!
+}
+
+

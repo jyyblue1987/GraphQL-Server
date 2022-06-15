@@ -34,5 +34,29 @@
     "collegeId": "col-101",
     "firstName": "Susan",
     "lastName": "George"
+  },
+  {
+    "id": "S1sbZuvYc",
+    "collegeId": "col-101",
+    "firstName": "jyy",
+    "lastName": "blue"
+  },
+  {
+    "id": "B1l4bdwKc",
+    "collegeId": "col-101",
+    "firstName": "jyy",
+    "lastName": "blue"
+  },
+  {
+    "id": "ryKEZOPYc",
+    "collegeId": "col-101",
+    "firstName": "jyy",
+    "lastName": "blue"
+  },
+  {
+    "id": "SkC4NOPYq",
+    "email": "jyyblue1987@outlook.com",
+    "firstName": "jyy",
+    "password": "$2b$10$s2wxqprTRuWs8nCJS9xLleRftRhBn62SGnbYO6iaAaFTNoy/zbkT2"
   }
 ]
